@@ -74,96 +74,14 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      // <Nav3
-      //   id="Nav3_0"
-      //   key="Nav3_0"
-      //   dataSource={Nav30DataSource}
-      //   isMobile={this.state.isMobile}
-      // />,
-      <Banner3
-        id="Banner3_0"
-        key="Banner3_0"
-        dataSource={Banner30DataSource}
+      
+      <Footer1
+        id="Footer1_0"
+        key="Footer1_0"
+        dataSource={Footer10DataSource}
         isMobile={this.state.isMobile}
-      />,
-      <Content5
-        id="Content5_0"
-        key="Content5_0"
-        dataSource={Content50DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Feature1
-        id="Feature1_0"
-        key="Feature1_0"
-        dataSource={Feature10DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Feature2
-        id="Feature2_0"
-        key="Feature2_0"
-        dataSource={Feature20DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Feature6
-        id="Feature6_0"
-        key="Feature6_0"
-        dataSource={Feature60DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Feature0
-        id="Feature0_0"
-        key="Feature0_0"
-        dataSource={Feature00DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Feature7
-        id="Feature7_0"
-        key="Feature7_0"
-        dataSource={Feature70DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Feature3
-        id="Feature3_0"
-        key="Feature3_0"
-        dataSource={Feature30DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Feature4
-        id="Feature4_0"
-        key="Feature4_0"
-        dataSource={Feature40DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Feature5
-        id="Feature5_0"
-        key="Feature5_0"
-        dataSource={Feature50DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Feature8
-        id="Feature8_0"
-        key="Feature8_0"
-        dataSource={Feature80DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Contact0
-        id="Contact0_0"
-        key="Contact0_0"
-        dataSource={Contact00DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      // <Footer1
-      //   id="Footer1_0"
-      //   key="Footer1_0"
-      //   dataSource={Footer10DataSource}
-      //   isMobile={this.state.isMobile}
-      // />,
-      // <Footer0
-      //   id="Footer0_0"
-      //   key="Footer0_0"
-      //   dataSource={Footer00DataSource}
-      //   isMobile={this.state.isMobile}
-      // />,
+      />
+   
     ];
     return (
       <div
@@ -172,7 +90,6 @@ export default class Home extends React.Component {
           this.dom = d;
         }}
       >
-        home3
         {/* 如果不是 dva 2.0 替换成 {children} start */}
         {this.state.show && children}
         {/* 如果不是 dva 2.0 替换成 {children} end */}

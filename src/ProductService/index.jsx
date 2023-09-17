@@ -2,12 +2,10 @@
 /* eslint arrow-parens: 0 */
 import React from 'react'
 import { enquireScreen } from 'enquire-js'
-import {  Route, Link } from "react-router-dom";
 
 import CommonBanner from './CommonBanner'
-import Content from './content'
+import PopularRecom from './PopularRecom'
 
-import ApplicationProcess from '../Partners/ApplicationProcess';
 
 
 
@@ -18,7 +16,7 @@ enquireScreen((b) => {
 
 const location = window.location
 
-export default class Home extends React.Component {
+export default class ProductService extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -48,9 +46,7 @@ export default class Home extends React.Component {
   render() {
     const children = [
       <CommonBanner id="CommonBanner" key="CommonBanner" />,
-      <Content id="Content2" key="Content2" />,
-      // <Route  path="/aboutus/a" component={ApplicationProcess} /> 
-
+      <PopularRecom id="PopularRecom" key="PopularRecom" />,
     
     ]
     return (
