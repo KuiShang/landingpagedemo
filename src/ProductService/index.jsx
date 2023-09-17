@@ -5,6 +5,10 @@ import { enquireScreen } from 'enquire-js'
 
 import CommonBanner from './CommonBanner'
 import PopularRecom from './PopularRecom'
+import ServiceSystem from './ServiceSystem'
+import FullyReinforced from './FullyReinforced'
+import ServiceValue from './ServiceValue'
+import Excellent from './Excellent'
 
 
 
@@ -47,7 +51,12 @@ export default class ProductService extends React.Component {
     const children = [
       <CommonBanner id="CommonBanner" key="CommonBanner" />,
       <PopularRecom id="PopularRecom" key="PopularRecom" />,
-    
+      <ServiceSystem id="ServiceSystem" key="ServiceSystem" />,
+      <FullyReinforced id="FullyReinforced" key="FullyReinforced" />,
+      <ServiceValue id="ServiceValue" key="ServiceValue" />,
+      <Excellent id="Excellent" key="Excellent" />,
+
+      
     ]
     return (
       <div
