@@ -14,7 +14,7 @@ const contentStyle = {
 class ProductServiceMenu extends React.PureComponent {
   render() {
     return (
-      <div className='ProductServiceMenu'>
+      <div className={this.props.show ? 'ProductServiceMenu show' : 'ProductServiceMenu'} onMouseLeave={this.props.close}>
         <div className='title'>客户案例</div>
         <div className='content'>
           <div className='evenNum item'>

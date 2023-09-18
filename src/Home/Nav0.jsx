@@ -12,6 +12,7 @@ class Header extends React.Component {
     this.state = {
       phoneOpen: false,
       menuHeight: 0,
+      productServiceMenuShow: false,
     };
   }
 
@@ -24,7 +25,12 @@ class Header extends React.Component {
     });
   };
   mouseenter = (data) => {
-    console.log(data);
+    if (data.name === 'item1') {
+      this.setState({ productServiceMenuShow: true });
+    }
+  };
+  coseProductServiceMenu = () => {
+    this.setState({ productServiceMenuShow: false });
   };
   render() {
     const { ...props } = this.props;
@@ -71,7 +77,7 @@ class Header extends React.Component {
             </Menu>
           </TweenOne>
         </div>
-        <ProductServiceMenu></ProductServiceMenu>
+        <ProductServiceMenu show={this.state.productServiceMenuShow} close={this.coseProductServiceMenu}></ProductServiceMenu>
       </TweenOne>
     );
   }
