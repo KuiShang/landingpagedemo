@@ -5,7 +5,7 @@ import Header from './Home/Nav0';
 import Home from './Home';
 import Page from './Page2';
 import UserStories from './UserStories';
-import ProductService from './ProductService';
+import ProductService from './ProductService/SafeService';
 
 import Partners from './Partners';
 import AboutUs from './aboutUs';
@@ -31,13 +31,13 @@ class App extends Component {
       isMobile,
     };
   }
-  componentDidMount() {
+  componentDidMount () {
     // 适配手机屏幕;
     enquireScreen((b) => {
       this.setState({ isMobile: !!b });
     });
   }
-  render() {
+  render () {
     return (
       <Router>
         <div>
@@ -47,8 +47,8 @@ class App extends Component {
 
           <Route path="/productservice" component={ProductService} />
           <Route path="/partners" component={Partners} />
-          <Route  exact  path="/aboutus" component={AboutUs} />
-          <Route   path="/aboutus/detail/:id" component={NewsDetail} />
+          <Route exact path="/aboutus" component={AboutUs} />
+          <Route path="/aboutus/detail/:id" component={NewsDetail} />
           <Footer dataSource={Footer10DataSource} isMobile={this.state.isMobile} />
         </div>
       </Router>
