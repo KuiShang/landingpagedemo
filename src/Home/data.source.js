@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Nav00DataSource = {
-  wrapper: { className: 'header0 home-page-wrapper' },
+  wrapper: { className: 'header0 home-page-wrapper custom-page-wrapper' },
   page: { className: 'home-page' },
   logo: {
     className: 'header0-logo',

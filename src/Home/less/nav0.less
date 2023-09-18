@@ -25,7 +25,7 @@
   }
   &-menu {
     float: right;
-    >.ant-menu {
+    > .ant-menu {
       line-height: 62px;
       background: transparent;
       color: @template-text-color-light;
@@ -58,9 +58,9 @@
       float: inherit;
       position: relative;
       left: -24px;
-      width: ~"calc(100% + 48px)";
+      width: ~'calc(100% + 48px)';
       opacity: 0;
-      transition: opacity .3s @ease-in-out, height .3s @ease-in-out;
+      transition: opacity 0.3s @ease-in-out, height 0.3s @ease-in-out;
       & li {
         padding: 0 24px;
         &.ant-menu-submenu {
@@ -85,7 +85,7 @@
         height: 2px;
         background: #fff;
         margin-top: 4px;
-        transition: transform .3s @ease-in-out, opacity .3s @ease-in-out;
+        transition: transform 0.3s @ease-in-out, opacity 0.3s @ease-in-out;
       }
       :first-child {
         margin-top: 0;
@@ -124,10 +124,14 @@
           }
         }
       }
-      >.@{header}-menu {
+      > .@{header}-menu {
         opacity: 1;
         pointer-events: auto;
       }
     }
   }
+}
+
+.home-page-wrapper.custom-page-wrapper {
+  overflow: visible;
 }
