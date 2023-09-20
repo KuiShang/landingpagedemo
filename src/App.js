@@ -13,6 +13,10 @@ import NewsDetail from './NewsDetail';
 
 import Footer from './home3';
 
+import Homecankaoh5 from './Homecankaoh5';
+
+
+
 import {
   Nav00DataSource,
 } from './Home/data.source.js';
@@ -49,6 +53,11 @@ class App extends Component {
           <Route path="/partners" component={Partners} />
           <Route exact path="/aboutus" component={AboutUs} />
           <Route path="/aboutus/detail/:id" component={NewsDetail} />
+
+          <Route exact path="/homecankaoh5" component={Homecankaoh5} />
+
+
+
           <Footer dataSource={Footer10DataSource} isMobile={this.state.isMobile} />
         </div>
       </Router>
